@@ -12,6 +12,7 @@ NCKU-RTOS-2026/
 │ ├── processor_settings.json
 │ └── price_72hr.json
 ├── output/
+│ ├── sporadic_aperiodic_task/
 │ ├── task_set.json
 │ ├── schedule_result.json
 │ ├── evaluation_results.json
