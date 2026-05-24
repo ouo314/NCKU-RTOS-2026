@@ -52,16 +52,12 @@ def main():
         scenario_name = os.path.splitext(os.path.basename(filepath))[0]
         print(f"\n   >>> 正在模擬情境：{scenario_name}")
         
-        # [極度重要] 每次模擬都必須載入一份全新的、不受污染的設備狀態
         gen_sim, ren_sim, bat_sim = load_processor_settings("input/processor_settings.json")
-        
-        # 載入該情境的突發任務
         sporadic_arr, aperiodic_arr = load_online_tasks(filepath)
-        
-        # 初始化守門員 (必須傳入 offline_slack 的副本，避免被上一輪模擬扣減污染)
         tester = AcceptanceTester(offline_slack.copy())
         
-        # 運行大一統動態排程引擎
+        log_list = [] # 【新增】建立空白日誌陣列
+        
         try:
             trajectory = run_72hr_simulation(
                 schedule_dict=schedule_dict,
@@ -72,12 +68,24 @@ def main():
                 price_72hr=price_72hr,
                 offline_tasks=periodic_tasks,
                 online_sporadic_arrivals=sporadic_arr,
-                online_aperiodic_arrivals=aperiodic_arr
+                online_aperiodic_arrivals=aperiodic_arr,
+                log_list=log_list # 【新增】傳入引擎
             )
             
-            # 儲存對應的 JSON 報表
+            # 儲存 JSON 報表
             output_file = f"output/schedule_result_{scenario_name}.json"
             save_schedule_to_json(trajectory, output_file)
+            
+            # 【修正】儲存符合作業規範的 JSON 格式 Acceptance Test Log
+            # 注意檔名前綴需吻合作業規範
+            log_file = f"output/acceptance_test_log_{scenario_name}.json"
+            log_data = {
+                "scenario": scenario_name,
+                "acceptance_test_log": log_list if log_list else ["本情境無任何線上突發任務抵達。"]
+            }
+            with open(log_file, "w", encoding="utf-8") as f:
+                json.dump(log_data, f, indent=4, ensure_ascii=False)
+            print(f"   [✅] 准入控制日誌已匯出至：{log_file}")
             
         except Exception as e:
             print(f"   [❌] 情境 {scenario_name} 模擬崩潰！錯誤原因：{str(e)}")

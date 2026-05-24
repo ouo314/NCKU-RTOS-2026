@@ -12,6 +12,8 @@ class ActiveJob:
     id: str
     w: int
 
+# ... 前面 import 維持不變 ...
+
 def run_72hr_simulation(
     schedule_dict: Dict[str, List[int]],
     tester: AcceptanceTester,
@@ -21,17 +23,20 @@ def run_72hr_simulation(
     price_72hr: List[float],
     offline_tasks: List[Any],
     online_sporadic_arrivals: Dict[int, List[SporadicTask]],
-    online_aperiodic_arrivals: Dict[int, List[AperiodicTask]]
+    online_aperiodic_arrivals: Dict[int, List[AperiodicTask]],
+    log_list: List[str] = None  # 【新增】接收日誌陣列
 ) -> List[TickRecord]:
     """
     Main 72-hour dynamic scheduling simulation loop.
     """
+    if log_list is None:
+        log_list = []
+        
     trajectory = []
     
     # 建立離線任務的 w 對照表
     offline_w_map = {}
     for t_obj in offline_tasks:
-        # t_obj 可能是 PeriodicTask
         offline_w_map[t_obj.id] = t_obj.w
 
     for t in range(72):
@@ -44,19 +49,26 @@ def run_72hr_simulation(
         
         # 推進佇列並取得從 Queue 中丟棄的清單
         missed_aperiodic = tester.process_queue_at_tick(t)
+        for missed_id in missed_aperiodic:
+            log_list.append(f"[時間 t={t+1:02d}] ⚠️ Aperiodic 任務 {missed_id} 因超時或硬體算力不足，已從佇列中強制丟棄 (Soft Deadline Miss)。")
         
         if t in online_sporadic_arrivals:
             for stask in online_sporadic_arrivals[t]:
-                tester.test_sporadic(stask, current_t=t)
+                is_admitted = tester.test_sporadic(stask, current_t=t)
+                status = "✅ 准入成功 (排入時程)" if is_admitted else "❌ 准入拒絕 (違反硬約束)"
+                log_list.append(f"[時間 t={t+1:02d}] 📥 Sporadic 任務抵達: ID={stask.id} (需求={stask.w}MWh, 時長={stask.e}h, D={stask.d}) -> {status}")
                 
         if t in online_aperiodic_arrivals:
             for atask in online_aperiodic_arrivals[t]:
-                # 如果連門都進不去 (物理不可能)，直接判定為 Soft Deadline Miss
                 is_admitted = tester.test_aperiodic(atask, current_t=t)
+                status = "✅ 准入成功 (進入佇列待命)" if is_admitted else "❌ 准入拒絕 (物理極限不可能完成)"
+                log_list.append(f"[時間 t={t+1:02d}] 📥 Aperiodic 任務抵達: ID={atask.id} (需求={atask.w}MWh, 時長={atask.e}h) -> {status}")
                 if not is_admitted:
                     missed_aperiodic.append(atask.id)
                 
         rejected_sporadic = list(tester.rejected_sporadic_this_tick)
+        
+        # ... (Step 2 之後完全維持原本的程式碼，不更動) ...
         
         # ---------------------------------------------------------
         # Step 2: 任務盤點與淨負載計算
@@ -68,7 +80,8 @@ def run_72hr_simulation(
             if t in hours:
                 task_id = job_id.split('_')[0] if '_' in job_id else job_id
                 w = offline_w_map.get(task_id, 0)
-                active_jobs.append(ActiveJob(id=job_id, w=w))
+                # 【修改這一行】將傳入的 id 從 job_id 改為 task_id
+                active_jobs.append(ActiveJob(id=task_id, w=w))
                 
         # 收集線上 Accept 排定的任務
         for task_id, hours in tester.online_schedule.items():
