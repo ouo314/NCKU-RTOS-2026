@@ -1,11 +1,11 @@
 {
-  "hard_deadline_miss_rate": 0.06,
+  "hard_deadline_miss_rate": 0.02,
   "soft_deadline_miss_rate": 0.0,
   "average_tardiness": 0.0,
   "max_tardiness": 0,
-  "average_response_time": 3.5185185185185186,
-  "max_response_time": 6,
-  "completion_time_jitter": 55.5,
+  "average_response_time": 1.6607142857142858,
+  "max_response_time": 4,
+  "completion_time_jitter": 57.5,
   "acceptance_test": {
     "sporadic_total_jobs": 6,
     "sporadic_accepted_jobs": 6,
@@ -16,23 +16,21 @@
   },
   "sporadic_value_rate": 1.0,
   "post_acceptance_violation_rate": 0.0,
-  "generator_cost": 292030.0,
-  "market_revenue": 319159.20000000007,
-  "objective_value": -27129.20000000007,
+  "generator_cost": 232458.0,
+  "market_revenue": 259831.2,
+  "objective_value": -27373.20000000001,
   "details": {
     "time_base": 1,
     "periodic_job_count": 44,
     "sporadic_job_count": 6,
     "aperiodic_job_count": 7,
     "hard_deadline_missed_jobs": [
-      "p1_12",
-      "p2_12",
       "p5_5"
     ],
     "soft_deadline_missed_jobs": [],
     "completion_time_jitter_by_periodic_task": {
-      "p1": 60.0,
-      "p2": 60.0,
+      "p1": 66.0,
+      "p2": 66.0,
       "p3": 60.0,
       "p4": 60.0,
       "p5": 45.0,
@@ -49,11 +47,11 @@
         "energy_demand": 7.0,
         "preempt": 1,
         "scheduled_slots": [
-          10
+          6
         ],
         "completed": true,
-        "completion_time": 10,
-        "response_time": 5,
+        "completion_time": 6,
+        "response_time": 1,
         "tardiness": 0,
         "deadline_miss": false
       },
@@ -67,11 +65,11 @@
         "energy_demand": 7.0,
         "preempt": 1,
         "scheduled_slots": [
-          16
+          12
         ],
         "completed": true,
-        "completion_time": 16,
-        "response_time": 5,
+        "completion_time": 12,
+        "response_time": 1,
         "tardiness": 0,
         "deadline_miss": false
       },
@@ -85,11 +83,11 @@
         "energy_demand": 7.0,
         "preempt": 1,
         "scheduled_slots": [
-          22
+          18
         ],
         "completed": true,
-        "completion_time": 22,
-        "response_time": 5,
+        "completion_time": 18,
+        "response_time": 1,
         "tardiness": 0,
         "deadline_miss": false
       },
@@ -103,11 +101,11 @@
         "energy_demand": 7.0,
         "preempt": 1,
         "scheduled_slots": [
-          28
+          24
         ],
         "completed": true,
-        "completion_time": 28,
-        "response_time": 5,
+        "completion_time": 24,
+        "response_time": 1,
         "tardiness": 0,
         "deadline_miss": false
       },
@@ -121,11 +119,11 @@
         "energy_demand": 7.0,
         "preempt": 1,
         "scheduled_slots": [
-          34
+          30
         ],
         "completed": true,
-        "completion_time": 34,
-        "response_time": 5,
+        "completion_time": 30,
+        "response_time": 1,
         "tardiness": 0,
         "deadline_miss": false
       },
@@ -139,11 +137,11 @@
         "energy_demand": 7.0,
         "preempt": 1,
         "scheduled_slots": [
-          40
+          36
         ],
         "completed": true,
-        "completion_time": 40,
-        "response_time": 5,
+        "completion_time": 36,
+        "response_time": 1,
         "tardiness": 0,
         "deadline_miss": false
       },
@@ -157,11 +155,11 @@
         "energy_demand": 7.0,
         "preempt": 1,
         "scheduled_slots": [
-          46
+          42
         ],
         "completed": true,
-        "completion_time": 46,
-        "response_time": 5,
+        "completion_time": 42,
+        "response_time": 1,
         "tardiness": 0,
         "deadline_miss": false
       },
@@ -175,11 +173,11 @@
         "energy_demand": 7.0,
         "preempt": 1,
         "scheduled_slots": [
-          52
+          48
         ],
         "completed": true,
-        "completion_time": 52,
-        "response_time": 5,
+        "completion_time": 48,
+        "response_time": 1,
         "tardiness": 0,
         "deadline_miss": false
       },
@@ -193,11 +191,11 @@
         "energy_demand": 7.0,
         "preempt": 1,
         "scheduled_slots": [
-          58
+          54
         ],
         "completed": true,
-        "completion_time": 58,
-        "response_time": 5,
+        "completion_time": 54,
+        "response_time": 1,
         "tardiness": 0,
         "deadline_miss": false
       },
@@ -211,11 +209,11 @@
         "energy_demand": 7.0,
         "preempt": 1,
         "scheduled_slots": [
-          64
+          60
         ],
         "completed": true,
-        "completion_time": 64,
-        "response_time": 5,
+        "completion_time": 60,
+        "response_time": 1,
         "tardiness": 0,
         "deadline_miss": false
       },
@@ -229,11 +227,11 @@
         "energy_demand": 7.0,
         "preempt": 1,
         "scheduled_slots": [
-          70
+          66
         ],
         "completed": true,
-        "completion_time": 70,
-        "response_time": 5,
+        "completion_time": 66,
+        "response_time": 1,
         "tardiness": 0,
         "deadline_miss": false
       },
@@ -246,12 +244,14 @@
         "execution_time": 1,
         "energy_demand": 7.0,
         "preempt": 1,
-        "scheduled_slots": [],
-        "completed": false,
-        "completion_time": null,
-        "response_time": null,
+        "scheduled_slots": [
+          72
+        ],
+        "completed": true,
+        "completion_time": 72,
+        "response_time": 1,
         "tardiness": 0,
-        "deadline_miss": true
+        "deadline_miss": false
       },
       {
         "id": "p2_1",
@@ -263,11 +263,11 @@
         "energy_demand": 10.0,
         "preempt": 1,
         "scheduled_slots": [
-          10
+          5
         ],
         "completed": true,
-        "completion_time": 10,
-        "response_time": 6,
+        "completion_time": 5,
+        "response_time": 1,
         "tardiness": 0,
         "deadline_miss": false
       },
@@ -281,11 +281,11 @@
         "energy_demand": 10.0,
         "preempt": 1,
         "scheduled_slots": [
-          16
+          11
         ],
         "completed": true,
-        "completion_time": 16,
-        "response_time": 6,
+        "completion_time": 11,
+        "response_time": 1,
         "tardiness": 0,
         "deadline_miss": false
       },
@@ -299,11 +299,11 @@
         "energy_demand": 10.0,
         "preempt": 1,
         "scheduled_slots": [
-          22
+          17
         ],
         "completed": true,
-        "completion_time": 22,
-        "response_time": 6,
+        "completion_time": 17,
+        "response_time": 1,
         "tardiness": 0,
         "deadline_miss": false
       },
@@ -317,11 +317,11 @@
         "energy_demand": 10.0,
         "preempt": 1,
         "scheduled_slots": [
-          28
+          23
         ],
         "completed": true,
-        "completion_time": 28,
-        "response_time": 6,
+        "completion_time": 23,
+        "response_time": 1,
         "tardiness": 0,
         "deadline_miss": false
       },
@@ -335,11 +335,11 @@
         "energy_demand": 10.0,
         "preempt": 1,
         "scheduled_slots": [
-          34
+          29
         ],
         "completed": true,
-        "completion_time": 34,
-        "response_time": 6,
+        "completion_time": 29,
+        "response_time": 1,
         "tardiness": 0,
         "deadline_miss": false
       },
@@ -353,11 +353,11 @@
         "energy_demand": 10.0,
         "preempt": 1,
         "scheduled_slots": [
-          40
+          35
         ],
         "completed": true,
-        "completion_time": 40,
-        "response_time": 6,
+        "completion_time": 35,
+        "response_time": 1,
         "tardiness": 0,
         "deadline_miss": false
       },
@@ -371,11 +371,11 @@
         "energy_demand": 10.0,
         "preempt": 1,
         "scheduled_slots": [
-          46
+          41
         ],
         "completed": true,
-        "completion_time": 46,
-        "response_time": 6,
+        "completion_time": 41,
+        "response_time": 1,
         "tardiness": 0,
         "deadline_miss": false
       },
@@ -389,11 +389,11 @@
         "energy_demand": 10.0,
         "preempt": 1,
         "scheduled_slots": [
-          52
+          47
         ],
         "completed": true,
-        "completion_time": 52,
-        "response_time": 6,
+        "completion_time": 47,
+        "response_time": 1,
         "tardiness": 0,
         "deadline_miss": false
       },
@@ -407,11 +407,11 @@
         "energy_demand": 10.0,
         "preempt": 1,
         "scheduled_slots": [
-          58
+          53
         ],
         "completed": true,
-        "completion_time": 58,
-        "response_time": 6,
+        "completion_time": 53,
+        "response_time": 1,
         "tardiness": 0,
         "deadline_miss": false
       },
@@ -425,11 +425,11 @@
         "energy_demand": 10.0,
         "preempt": 1,
         "scheduled_slots": [
-          64
+          59
         ],
         "completed": true,
-        "completion_time": 64,
-        "response_time": 6,
+        "completion_time": 59,
+        "response_time": 1,
         "tardiness": 0,
         "deadline_miss": false
       },
@@ -443,11 +443,11 @@
         "energy_demand": 10.0,
         "preempt": 1,
         "scheduled_slots": [
-          70
+          65
         ],
         "completed": true,
-        "completion_time": 70,
-        "response_time": 6,
+        "completion_time": 65,
+        "response_time": 1,
         "tardiness": 0,
         "deadline_miss": false
       },
@@ -460,12 +460,14 @@
         "execution_time": 1,
         "energy_demand": 10.0,
         "preempt": 1,
-        "scheduled_slots": [],
-        "completed": false,
-        "completion_time": null,
-        "response_time": null,
+        "scheduled_slots": [
+          71
+        ],
+        "completed": true,
+        "completion_time": 71,
+        "response_time": 1,
         "tardiness": 0,
-        "deadline_miss": true
+        "deadline_miss": false
       },
       {
         "id": "p3_1",
