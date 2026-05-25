@@ -1,11 +1,11 @@
 {
-  "hard_deadline_miss_rate": 0.88,
+  "hard_deadline_miss_rate": 0.06,
   "soft_deadline_miss_rate": 0.0,
-  "average_tardiness": 4.440677966101695,
-  "max_tardiness": 24,
-  "average_response_time": 10.16,
-  "max_response_time": 27,
-  "completion_time_jitter": 43.0,
+  "average_tardiness": 0.0,
+  "max_tardiness": 0,
+  "average_response_time": 3.5,
+  "max_response_time": 6,
+  "completion_time_jitter": 55.5,
   "acceptance_test": {
     "sporadic_total_jobs": 6,
     "sporadic_accepted_jobs": 6,
@@ -25,59 +25,18 @@
     "sporadic_job_count": 6,
     "aperiodic_job_count": 9,
     "hard_deadline_missed_jobs": [
-      "p1_1",
-      "p1_2",
-      "p1_3",
-      "p1_4",
-      "p1_5",
-      "p1_6",
-      "p1_7",
-      "p1_8",
-      "p1_9",
-      "p1_10",
-      "p1_11",
       "p1_12",
-      "p2_1",
-      "p2_2",
-      "p2_3",
-      "p2_4",
-      "p2_5",
-      "p2_6",
-      "p2_7",
-      "p2_8",
-      "p2_9",
-      "p2_10",
-      "p2_11",
       "p2_12",
-      "p3_1",
-      "p3_2",
-      "p3_3",
-      "p3_4",
-      "p3_5",
-      "p3_6",
-      "p4_1",
-      "p4_2",
-      "p4_3",
-      "p4_4",
-      "p4_5",
-      "p4_6",
-      "p5_1",
-      "p5_2",
-      "p5_3",
-      "p5_4",
-      "p5_5",
-      "p6_1",
-      "p6_2",
-      "p6_3"
+      "p5_5"
     ],
     "soft_deadline_missed_jobs": [],
     "completion_time_jitter_by_periodic_task": {
-      "p1": 54.0,
-      "p2": 54.0,
-      "p3": 48.0,
-      "p4": 48.0,
-      "p5": 30.0,
-      "p6": 24.0
+      "p1": 60.0,
+      "p2": 60.0,
+      "p3": 60.0,
+      "p4": 60.0,
+      "p5": 45.0,
+      "p6": 48.0
     },
     "periodic_jobs": [
       {
@@ -90,13 +49,13 @@
         "energy_demand": 7.0,
         "preempt": 1,
         "scheduled_slots": [
-          16
+          10
         ],
         "completed": true,
-        "completion_time": 16,
-        "response_time": 11,
-        "tardiness": 5,
-        "deadline_miss": true
+        "completion_time": 10,
+        "response_time": 5,
+        "tardiness": 0,
+        "deadline_miss": false
       },
       {
         "id": "p1_2",
@@ -108,13 +67,13 @@
         "energy_demand": 7.0,
         "preempt": 1,
         "scheduled_slots": [
-          22
+          16
         ],
         "completed": true,
-        "completion_time": 22,
-        "response_time": 11,
-        "tardiness": 5,
-        "deadline_miss": true
+        "completion_time": 16,
+        "response_time": 5,
+        "tardiness": 0,
+        "deadline_miss": false
       },
       {
         "id": "p1_3",
@@ -126,13 +85,13 @@
         "energy_demand": 7.0,
         "preempt": 1,
         "scheduled_slots": [
-          28
+          22
         ],
         "completed": true,
-        "completion_time": 28,
-        "response_time": 11,
-        "tardiness": 5,
-        "deadline_miss": true
+        "completion_time": 22,
+        "response_time": 5,
+        "tardiness": 0,
+        "deadline_miss": false
       },
       {
         "id": "p1_4",
@@ -144,13 +103,13 @@
         "energy_demand": 7.0,
         "preempt": 1,
         "scheduled_slots": [
-          34
+          28
         ],
         "completed": true,
-        "completion_time": 34,
-        "response_time": 11,
-        "tardiness": 5,
-        "deadline_miss": true
+        "completion_time": 28,
+        "response_time": 5,
+        "tardiness": 0,
+        "deadline_miss": false
       },
       {
         "id": "p1_5",
@@ -162,13 +121,13 @@
         "energy_demand": 7.0,
         "preempt": 1,
         "scheduled_slots": [
-          40
+          34
         ],
         "completed": true,
-        "completion_time": 40,
-        "response_time": 11,
-        "tardiness": 5,
-        "deadline_miss": true
+        "completion_time": 34,
+        "response_time": 5,
+        "tardiness": 0,
+        "deadline_miss": false
       },
       {
         "id": "p1_6",
@@ -180,13 +139,13 @@
         "energy_demand": 7.0,
         "preempt": 1,
         "scheduled_slots": [
-          46
+          40
         ],
         "completed": true,
-        "completion_time": 46,
-        "response_time": 11,
-        "tardiness": 5,
-        "deadline_miss": true
+        "completion_time": 40,
+        "response_time": 5,
+        "tardiness": 0,
+        "deadline_miss": false
       },
       {
         "id": "p1_7",
@@ -198,13 +157,13 @@
         "energy_demand": 7.0,
         "preempt": 1,
         "scheduled_slots": [
-          52
+          46
         ],
         "completed": true,
-        "completion_time": 52,
-        "response_time": 11,
-        "tardiness": 5,
-        "deadline_miss": true
+        "completion_time": 46,
+        "response_time": 5,
+        "tardiness": 0,
+        "deadline_miss": false
       },
       {
         "id": "p1_8",
@@ -216,13 +175,13 @@
         "energy_demand": 7.0,
         "preempt": 1,
         "scheduled_slots": [
-          58
+          52
         ],
         "completed": true,
-        "completion_time": 58,
-        "response_time": 11,
-        "tardiness": 5,
-        "deadline_miss": true
+        "completion_time": 52,
+        "response_time": 5,
+        "tardiness": 0,
+        "deadline_miss": false
       },
       {
         "id": "p1_9",
@@ -234,13 +193,13 @@
         "energy_demand": 7.0,
         "preempt": 1,
         "scheduled_slots": [
-          64
+          58
         ],
         "completed": true,
-        "completion_time": 64,
-        "response_time": 11,
-        "tardiness": 5,
-        "deadline_miss": true
+        "completion_time": 58,
+        "response_time": 5,
+        "tardiness": 0,
+        "deadline_miss": false
       },
       {
         "id": "p1_10",
@@ -252,13 +211,13 @@
         "energy_demand": 7.0,
         "preempt": 1,
         "scheduled_slots": [
-          70
+          64
         ],
         "completed": true,
-        "completion_time": 70,
-        "response_time": 11,
-        "tardiness": 5,
-        "deadline_miss": true
+        "completion_time": 64,
+        "response_time": 5,
+        "tardiness": 0,
+        "deadline_miss": false
       },
       {
         "id": "p1_11",
@@ -269,12 +228,14 @@
         "execution_time": 1,
         "energy_demand": 7.0,
         "preempt": 1,
-        "scheduled_slots": [],
-        "completed": false,
-        "completion_time": null,
-        "response_time": null,
-        "tardiness": 2,
-        "deadline_miss": true
+        "scheduled_slots": [
+          70
+        ],
+        "completed": true,
+        "completion_time": 70,
+        "response_time": 5,
+        "tardiness": 0,
+        "deadline_miss": false
       },
       {
         "id": "p1_12",
@@ -302,13 +263,13 @@
         "energy_demand": 10.0,
         "preempt": 1,
         "scheduled_slots": [
-          16
+          10
         ],
         "completed": true,
-        "completion_time": 16,
-        "response_time": 12,
-        "tardiness": 6,
-        "deadline_miss": true
+        "completion_time": 10,
+        "response_time": 6,
+        "tardiness": 0,
+        "deadline_miss": false
       },
       {
         "id": "p2_2",
@@ -320,13 +281,13 @@
         "energy_demand": 10.0,
         "preempt": 1,
         "scheduled_slots": [
-          22
+          16
         ],
         "completed": true,
-        "completion_time": 22,
-        "response_time": 12,
-        "tardiness": 6,
-        "deadline_miss": true
+        "completion_time": 16,
+        "response_time": 6,
+        "tardiness": 0,
+        "deadline_miss": false
       },
       {
         "id": "p2_3",
@@ -338,13 +299,13 @@
         "energy_demand": 10.0,
         "preempt": 1,
         "scheduled_slots": [
-          28
+          22
         ],
         "completed": true,
-        "completion_time": 28,
-        "response_time": 12,
-        "tardiness": 6,
-        "deadline_miss": true
+        "completion_time": 22,
+        "response_time": 6,
+        "tardiness": 0,
+        "deadline_miss": false
       },
       {
         "id": "p2_4",
@@ -356,13 +317,13 @@
         "energy_demand": 10.0,
         "preempt": 1,
         "scheduled_slots": [
-          34
+          28
         ],
         "completed": true,
-        "completion_time": 34,
-        "response_time": 12,
-        "tardiness": 6,
-        "deadline_miss": true
+        "completion_time": 28,
+        "response_time": 6,
+        "tardiness": 0,
+        "deadline_miss": false
       },
       {
         "id": "p2_5",
@@ -374,13 +335,13 @@
         "energy_demand": 10.0,
         "preempt": 1,
         "scheduled_slots": [
-          40
+          34
         ],
         "completed": true,
-        "completion_time": 40,
-        "response_time": 12,
-        "tardiness": 6,
-        "deadline_miss": true
+        "completion_time": 34,
+        "response_time": 6,
+        "tardiness": 0,
+        "deadline_miss": false
       },
       {
         "id": "p2_6",
@@ -392,13 +353,13 @@
         "energy_demand": 10.0,
         "preempt": 1,
         "scheduled_slots": [
-          46
+          40
         ],
         "completed": true,
-        "completion_time": 46,
-        "response_time": 12,
-        "tardiness": 6,
-        "deadline_miss": true
+        "completion_time": 40,
+        "response_time": 6,
+        "tardiness": 0,
+        "deadline_miss": false
       },
       {
         "id": "p2_7",
@@ -410,13 +371,13 @@
         "energy_demand": 10.0,
         "preempt": 1,
         "scheduled_slots": [
-          52
+          46
         ],
         "completed": true,
-        "completion_time": 52,
-        "response_time": 12,
-        "tardiness": 6,
-        "deadline_miss": true
+        "completion_time": 46,
+        "response_time": 6,
+        "tardiness": 0,
+        "deadline_miss": false
       },
       {
         "id": "p2_8",
@@ -428,13 +389,13 @@
         "energy_demand": 10.0,
         "preempt": 1,
         "scheduled_slots": [
-          58
+          52
         ],
         "completed": true,
-        "completion_time": 58,
-        "response_time": 12,
-        "tardiness": 6,
-        "deadline_miss": true
+        "completion_time": 52,
+        "response_time": 6,
+        "tardiness": 0,
+        "deadline_miss": false
       },
       {
         "id": "p2_9",
@@ -446,13 +407,13 @@
         "energy_demand": 10.0,
         "preempt": 1,
         "scheduled_slots": [
-          64
+          58
         ],
         "completed": true,
-        "completion_time": 64,
-        "response_time": 12,
-        "tardiness": 6,
-        "deadline_miss": true
+        "completion_time": 58,
+        "response_time": 6,
+        "tardiness": 0,
+        "deadline_miss": false
       },
       {
         "id": "p2_10",
@@ -464,13 +425,13 @@
         "energy_demand": 10.0,
         "preempt": 1,
         "scheduled_slots": [
-          70
+          64
         ],
         "completed": true,
-        "completion_time": 70,
-        "response_time": 12,
-        "tardiness": 6,
-        "deadline_miss": true
+        "completion_time": 64,
+        "response_time": 6,
+        "tardiness": 0,
+        "deadline_miss": false
       },
       {
         "id": "p2_11",
@@ -481,12 +442,14 @@
         "execution_time": 1,
         "energy_demand": 10.0,
         "preempt": 1,
-        "scheduled_slots": [],
-        "completed": false,
-        "completion_time": null,
-        "response_time": null,
-        "tardiness": 3,
-        "deadline_miss": true
+        "scheduled_slots": [
+          70
+        ],
+        "completed": true,
+        "completion_time": 70,
+        "response_time": 6,
+        "tardiness": 0,
+        "deadline_miss": false
       },
       {
         "id": "p2_12",
@@ -514,14 +477,14 @@
         "energy_demand": 7.0,
         "preempt": 0,
         "scheduled_slots": [
-          17,
-          18
+          5,
+          6
         ],
         "completed": true,
-        "completion_time": 18,
-        "response_time": 14,
-        "tardiness": 2,
-        "deadline_miss": true
+        "completion_time": 6,
+        "response_time": 2,
+        "tardiness": 0,
+        "deadline_miss": false
       },
       {
         "id": "p3_2",
@@ -533,14 +496,14 @@
         "energy_demand": 7.0,
         "preempt": 0,
         "scheduled_slots": [
-          29,
-          30
+          17,
+          18
         ],
         "completed": true,
-        "completion_time": 30,
-        "response_time": 14,
-        "tardiness": 2,
-        "deadline_miss": true
+        "completion_time": 18,
+        "response_time": 2,
+        "tardiness": 0,
+        "deadline_miss": false
       },
       {
         "id": "p3_3",
@@ -552,14 +515,14 @@
         "energy_demand": 7.0,
         "preempt": 0,
         "scheduled_slots": [
-          41,
-          42
+          29,
+          30
         ],
         "completed": true,
-        "completion_time": 42,
-        "response_time": 14,
-        "tardiness": 2,
-        "deadline_miss": true
+        "completion_time": 30,
+        "response_time": 2,
+        "tardiness": 0,
+        "deadline_miss": false
       },
       {
         "id": "p3_4",
@@ -571,14 +534,14 @@
         "energy_demand": 7.0,
         "preempt": 0,
         "scheduled_slots": [
-          53,
-          54
+          41,
+          42
         ],
         "completed": true,
-        "completion_time": 54,
-        "response_time": 14,
-        "tardiness": 2,
-        "deadline_miss": true
+        "completion_time": 42,
+        "response_time": 2,
+        "tardiness": 0,
+        "deadline_miss": false
       },
       {
         "id": "p3_5",
@@ -590,14 +553,14 @@
         "energy_demand": 7.0,
         "preempt": 0,
         "scheduled_slots": [
-          65,
-          66
+          53,
+          54
         ],
         "completed": true,
-        "completion_time": 66,
-        "response_time": 14,
-        "tardiness": 2,
-        "deadline_miss": true
+        "completion_time": 54,
+        "response_time": 2,
+        "tardiness": 0,
+        "deadline_miss": false
       },
       {
         "id": "p3_6",
@@ -608,12 +571,15 @@
         "execution_time": 2,
         "energy_demand": 7.0,
         "preempt": 0,
-        "scheduled_slots": [],
-        "completed": false,
-        "completion_time": null,
-        "response_time": null,
+        "scheduled_slots": [
+          65,
+          66
+        ],
+        "completed": true,
+        "completion_time": 66,
+        "response_time": 2,
         "tardiness": 0,
-        "deadline_miss": true
+        "deadline_miss": false
       },
       {
         "id": "p4_1",
@@ -625,14 +591,14 @@
         "energy_demand": 13.0,
         "preempt": 0,
         "scheduled_slots": [
-          14,
-          15
+          2,
+          3
         ],
         "completed": true,
-        "completion_time": 15,
-        "response_time": 14,
-        "tardiness": 2,
-        "deadline_miss": true
+        "completion_time": 3,
+        "response_time": 2,
+        "tardiness": 0,
+        "deadline_miss": false
       },
       {
         "id": "p4_2",
@@ -644,14 +610,14 @@
         "energy_demand": 13.0,
         "preempt": 0,
         "scheduled_slots": [
-          26,
-          27
+          14,
+          15
         ],
         "completed": true,
-        "completion_time": 27,
-        "response_time": 14,
-        "tardiness": 2,
-        "deadline_miss": true
+        "completion_time": 15,
+        "response_time": 2,
+        "tardiness": 0,
+        "deadline_miss": false
       },
       {
         "id": "p4_3",
@@ -663,14 +629,14 @@
         "energy_demand": 13.0,
         "preempt": 0,
         "scheduled_slots": [
-          38,
-          39
+          26,
+          27
         ],
         "completed": true,
-        "completion_time": 39,
-        "response_time": 14,
-        "tardiness": 2,
-        "deadline_miss": true
+        "completion_time": 27,
+        "response_time": 2,
+        "tardiness": 0,
+        "deadline_miss": false
       },
       {
         "id": "p4_4",
@@ -682,14 +648,14 @@
         "energy_demand": 13.0,
         "preempt": 0,
         "scheduled_slots": [
-          50,
-          51
+          38,
+          39
         ],
         "completed": true,
-        "completion_time": 51,
-        "response_time": 14,
-        "tardiness": 2,
-        "deadline_miss": true
+        "completion_time": 39,
+        "response_time": 2,
+        "tardiness": 0,
+        "deadline_miss": false
       },
       {
         "id": "p4_5",
@@ -701,14 +667,14 @@
         "energy_demand": 13.0,
         "preempt": 0,
         "scheduled_slots": [
-          62,
-          63
+          50,
+          51
         ],
         "completed": true,
-        "completion_time": 63,
-        "response_time": 14,
-        "tardiness": 2,
-        "deadline_miss": true
+        "completion_time": 51,
+        "response_time": 2,
+        "tardiness": 0,
+        "deadline_miss": false
       },
       {
         "id": "p4_6",
@@ -719,12 +685,15 @@
         "execution_time": 2,
         "energy_demand": 13.0,
         "preempt": 0,
-        "scheduled_slots": [],
-        "completed": false,
-        "completion_time": null,
-        "response_time": null,
+        "scheduled_slots": [
+          62,
+          63
+        ],
+        "completed": true,
+        "completion_time": 63,
+        "response_time": 2,
         "tardiness": 0,
-        "deadline_miss": true
+        "deadline_miss": false
       },
       {
         "id": "p5_1",
@@ -736,15 +705,15 @@
         "energy_demand": 14.0,
         "preempt": 1,
         "scheduled_slots": [
-          26,
-          27,
-          28
+          11,
+          12,
+          13
         ],
         "completed": true,
-        "completion_time": 28,
-        "response_time": 18,
-        "tardiness": 15,
-        "deadline_miss": true
+        "completion_time": 13,
+        "response_time": 3,
+        "tardiness": 0,
+        "deadline_miss": false
       },
       {
         "id": "p5_2",
@@ -756,15 +725,15 @@
         "energy_demand": 14.0,
         "preempt": 1,
         "scheduled_slots": [
-          41,
-          42,
-          43
+          26,
+          27,
+          28
         ],
         "completed": true,
-        "completion_time": 43,
-        "response_time": 18,
-        "tardiness": 15,
-        "deadline_miss": true
+        "completion_time": 28,
+        "response_time": 3,
+        "tardiness": 0,
+        "deadline_miss": false
       },
       {
         "id": "p5_3",
@@ -776,15 +745,15 @@
         "energy_demand": 14.0,
         "preempt": 1,
         "scheduled_slots": [
-          56,
-          57,
-          58
+          41,
+          42,
+          43
         ],
         "completed": true,
-        "completion_time": 58,
-        "response_time": 18,
-        "tardiness": 15,
-        "deadline_miss": true
+        "completion_time": 43,
+        "response_time": 3,
+        "tardiness": 0,
+        "deadline_miss": false
       },
       {
         "id": "p5_4",
@@ -796,14 +765,15 @@
         "energy_demand": 14.0,
         "preempt": 1,
         "scheduled_slots": [
-          71,
-          72
+          56,
+          57,
+          58
         ],
-        "completed": false,
-        "completion_time": null,
-        "response_time": null,
-        "tardiness": 15,
-        "deadline_miss": true
+        "completed": true,
+        "completion_time": 58,
+        "response_time": 3,
+        "tardiness": 0,
+        "deadline_miss": false
       },
       {
         "id": "p5_5",
@@ -814,7 +784,10 @@
         "execution_time": 3,
         "energy_demand": 14.0,
         "preempt": 1,
-        "scheduled_slots": [],
+        "scheduled_slots": [
+          71,
+          72
+        ],
         "completed": false,
         "completion_time": null,
         "response_time": null,
@@ -831,15 +804,15 @@
         "energy_demand": 17.0,
         "preempt": 1,
         "scheduled_slots": [
-          28,
-          29,
-          30
+          4,
+          5,
+          6
         ],
         "completed": true,
-        "completion_time": 30,
-        "response_time": 27,
-        "tardiness": 24,
-        "deadline_miss": true
+        "completion_time": 6,
+        "response_time": 3,
+        "tardiness": 0,
+        "deadline_miss": false
       },
       {
         "id": "p6_2",
@@ -851,15 +824,15 @@
         "energy_demand": 17.0,
         "preempt": 1,
         "scheduled_slots": [
-          52,
-          53,
-          54
+          28,
+          29,
+          30
         ],
         "completed": true,
-        "completion_time": 54,
-        "response_time": 27,
-        "tardiness": 24,
-        "deadline_miss": true
+        "completion_time": 30,
+        "response_time": 3,
+        "tardiness": 0,
+        "deadline_miss": false
       },
       {
         "id": "p6_3",
@@ -870,12 +843,16 @@
         "execution_time": 3,
         "energy_demand": 17.0,
         "preempt": 1,
-        "scheduled_slots": [],
-        "completed": false,
-        "completion_time": null,
-        "response_time": null,
-        "tardiness": 19,
-        "deadline_miss": true
+        "scheduled_slots": [
+          52,
+          53,
+          54
+        ],
+        "completed": true,
+        "completion_time": 54,
+        "response_time": 3,
+        "tardiness": 0,
+        "deadline_miss": false
       }
     ],
     "sporadic_jobs": [
